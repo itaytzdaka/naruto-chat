@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background: url("assets/img/naruto chat.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+img{
+    position: absolute;
+    left: 50px;
+    bottom: -200px;
+    height: 800px;
+}
+
+#bubble{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 60%;
+    background-color: #ffffffcc;
+    border-radius: 15px;
+}
+
+#bubble-top{
+    display: flex;
+    flex-grow: 1;
+}
+
+#bubble-bottom{
+    display: flex;
+    flex-grow: 1;
+}
