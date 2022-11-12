@@ -103,8 +103,19 @@ input, textarea, button{
         font-size: 15px;
     }
 
+    img{
+        height: 130vh;
+        left: 0;
+    }
+
     #bubble{
+        width: 80%;
         height: 25vh;
         padding: 5px;
+        bottom: 70px;
+    }
+
+    #button{
+        padding: 10px;
     }
   }
