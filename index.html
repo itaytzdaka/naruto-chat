@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <title>Document</title>
+    <title>shippuden.co.il - auto reply</title>
 </head>
 <body>
     <img src="assets/img/naruto smile 2.png" alt="">
+
     <div id="bubble">
         <div id="bubble-top">
-            <input type="text" name="question" id="question" placeholder="יש לרשום כאן...">
-            <button id="send">שלח</button>
+            <form  onsubmit="send();return false">
+                <input type="text" name="question" id="question" placeholder="יש לרשום כאן...">
+                <!-- <button id="send">שלח</button> -->
+                <input class="submit" type="submit" value="שלח"/>
+            </form>
         </div>
         <div id="bubble-bottom">
             <div id="answer">
-                הפרקים יוצאים כל יום ראשון בשעה 12:00 מתורגמים לאנגלית. העבודה שלנו על הפרק תלויה בזמינות חברי הצוות ולכן יכולה לקחת שעות או ימים. לכן, אין יום קבוע לפרסום הפרק מתורגם לעברית. תוכלו לעקוב אחרי ההתקדמות שלנו על ידי מד הפרקים המוצמד לאתר שמתעדכן בזמן אמת ברגע שהסתיים שלב.
+                יו! כאן נארוטו! הגעתי כדי לענות לכם לשאלות, שאלו אותי מה שתרצו ואנסה לעזור לכם דאטביו.
             </div>
         </div>
     </div>
