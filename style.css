@@ -27,8 +27,10 @@ img{
     bottom: 50px;
     display: flex;
     flex-direction: column;
-    min-height: 170px;
+    height: 10vw;
+    min-height: 100px;
     width: 60%;
+    max-width: 1000px;
     background-color: #ffffffcc;
     border-radius: 15px;
     padding: 25px;
@@ -43,6 +45,7 @@ img{
 #bubble-bottom{
     display: flex;
     flex-grow: 8;
+    overflow: auto;
 }
 
 form{
@@ -50,7 +53,7 @@ form{
     justify-content: space-between;
 }
 
-#question{
+#question , #question:-webkit-autofill{
     background-color: rgba(255, 255, 255, 0);
     border: none;
     width: 90%;
@@ -61,7 +64,8 @@ form{
     outline: none;
 }
 
-#send{
+#button{
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
     padding: 10px 30px;
     border: none;
@@ -69,11 +73,12 @@ form{
 
 #answer{
     background-color: rgba(255, 255, 255, 0);
+    color: #363636;
     border: none;
     display: flex;
     flex-grow: 1;
     margin: 15px 0 0 0;
-    padding: 15px;
+    padding: 5px 15px;
     font-size: large;
 }
 
@@ -85,3 +90,21 @@ input, textarea, button{
     color: #5d5d5d;
     font-size: medium;
 }
+
+@media only screen and (max-width: 1000px) {
+    #bubble{
+        height: 25vw;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #answer,#button,#question{
+        font-size: 15px;
+    }
+
+    #bubble{
+        height: 25vh;
+        padding: 5px;
+    }
+  }

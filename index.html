@@ -13,10 +13,9 @@
 
     <div id="bubble">
         <div id="bubble-top">
-            <form  onsubmit="send();return false">
+            <form id="form1" onsubmit="send();return false" >
                 <input type="text" name="question" id="question" placeholder="יש לרשום כאן...">
-                <!-- <button id="send">שלח</button> -->
-                <input class="submit" type="submit" value="שלח"/>
+                <button id="button" type="submit" form="form1" value="Submit">שלח</button>
             </form>
         </div>
         <div id="bubble-bottom">
