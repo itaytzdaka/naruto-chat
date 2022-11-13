@@ -265,6 +265,7 @@ function send(){
     let questionInput=document.getElementById("question");
     let question=questionInput.value;
     question=question.replaceAll(/\?|\!|\,/g,"").split(" ");
+    question = [...new Set(question)];
     search(question);
 
 }
