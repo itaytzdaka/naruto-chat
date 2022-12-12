@@ -54,6 +54,7 @@ img {
     flex-grow: 1;
     overflow: auto;
     padding: 10px;
+    overflow: hidden;
 }
 
 form {
